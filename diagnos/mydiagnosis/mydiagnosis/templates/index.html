@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Health - Medical Diagnosis</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="Tooplate">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+     <link rel="stylesheet" href="../static/css/animate.css">
+     <link rel="stylesheet" href="../static/css/owl.carousel.css">
+     <link rel="stylesheet" href="../static/css/owl.theme.default.min.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="../static/css/style.css">
+
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+
+               <span class="spinner-rotate"></span>
+               
+          </div>
+     </section>
+
+     <!-- MENU -->
+     <section class="navbar navbar-default navbar-static-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="" class="navbar-brand"><i class="fa fa-heartbeat"></i> PIMA</a>
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                         <li><a href="#top" class="smoothScroll">Home</a></li>
+                         <li><a href="{% url 'hiv' %}" class="smoothScroll">HIV/AIDS</a></li>
+                         <li><a href="{% url 'malaria' %}" class="smoothScroll">Malaria</a></li>
+                         <li><a href="{% url 'TB' %}" class="smoothScroll">Tuberculosis(TB)</a></li>
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+
+     <!-- HOME -->
+     <section id="home" class="slider" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                         <div class="owl-carousel owl-theme">
+                              <div class="item item-first">
+                                   <div class="caption">
+                                        <div class="col-md-offset-1 col-md-10">
+                                             <h3>HIV testing save lives</h3>
+                                             <h1>Get tested, protect yourself and others</h1>
+                                             <a href="{% url 'hiv' %}" class="section-btn btn btn-default smoothScroll">HIV/AIDS testing..</a>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="item item-second">
+                                   <div class="caption">
+                                        <div class="col-md-offset-1 col-md-10">
+                                             <h3>tb or not tb, that is the question..</h3>
+                                             <h1>Effortlessly Test and Manage Tuberculosis(TB)</h1>
+                                             <a href="{% url 'TB' %}" class="section-btn btn btn-default btn-gray smoothScroll">Tuberculosis(TB) testing..</a>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="item item-third">
+                                   <div class="caption">
+                                        <div class="col-md-offset-1 col-md-10">
+                                             <h3>Empower your fight against malaria with US</h3>
+                                             <h1>Stay ahead of the disease with real-time testing..</h1>
+                                             <a href="{% url 'malaria' %}" class="section-btn btn btn-default btn-blue smoothScroll">Malaria testing..</a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+               </div>
+          </div>
+     </section>
+    
+     <!-- GOOGLE MAP -->
+     <!-- <section id="google-map">
+     <!- How to change your own map point
+            1. Go to Google Maps
+            2. Click on your location point
+            3. Click "Share" and choose "Embed map" tab
+            4. Copy only URL and paste it within the src="" field below
+	
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.3030413476204!2d100.5641230193719!3d13.757206847615207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf51ce6427b7918fc!2sG+Tower!5e0!3m2!1sen!2sth!4v1510722015945" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+     </section>            -->
+
+     <!-- SCRIPTS -->
+     <script src="../static/js/jquery.js"></script>
+     <script src="../static/js/bootstrap.min.js"></script>
+     <script src="../static/js/jquery.sticky.js"></script>
+     <script src="../static/js/jquery.stellar.min.js"></script>
+     <script src="../static/js/wow.min.js"></script>
+     <script src="../static/js/smoothscroll.js"></script>
+     <script src="../static/js/owl.carousel.min.js"></script>
+     <script src="../static/js/custom.js"></script>
+
+</body>
+</html>

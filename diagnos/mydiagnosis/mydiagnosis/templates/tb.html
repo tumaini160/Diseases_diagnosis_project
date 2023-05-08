@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Health - Medical Website Template</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="Tooplate">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+     <link rel="stylesheet" href="../static/css/animate.css">
+     <link rel="stylesheet" href="../static/css/owl.carousel.css">
+     <link rel="stylesheet" href="../static/css/owl.theme.default.min.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="../static/css/style.css">
+
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+
+               <span class="spinner-rotate"></span>
+               
+          </div>
+     </section>
+
+     <!-- MENU -->
+     <section class="navbar navbar-default navbar-static-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="" class="navbar-brand"><i class="fa fa-heartbeat"></i> PIMA</a>
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                         <li><a href="{% url 'home' %}" class="smoothScroll">Home</a></li>
+					<li><a href="{% url 'hiv' %}" class="smoothScroll">HIV/AIDS</a></li>
+                         <li><a href="{% url 'malaria' %}" class="smoothScroll">Malaria</a></li>
+					<li><a href="{% url 'TB' %}" class="smoothScroll">Tuberculosis(TB)</a></li>
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+
+     <!-- HOME -->
+
+	 <section class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100" id="formbox">
+                        <h4>Health Status Form</h4>
+						<form action="tbtestresults" class="img-fluid position-absolute w-100 h-100">	
+							<label for="age">Age:</label>
+							<input type="number" id="age" name="age" min="1" max="120" required><br><br>
+							<label for="chest_pain">Chest pain:</label>
+							<select id="chest_pain" name="chest_pain">
+							<option value="choose" disabled selected>Yes/No</option>
+							<option value="Yes">Yes</option>
+							<option value="No">No</option>
+							</select><br><br>
+							<label for="fever">Fever:</label>
+							<select id="fever" name="fever">
+							<option value="choose" disabled selected>Yes/No</option>
+							<option value="Yes">Yes</option>
+							<option value="No">No</option>
+							</select><br><br>
+							<label for="cough">Persistent cough:</label>
+							<select id="cough" name="cough">
+							<option value="choose" disabled selected>Yes/No</option>
+							<option value="Yes">Yes</option>
+							<option value="No">No</option>
+							</select><br><br>
+							<label for="fatigue">Fatigue:</label>
+							<select id="fatigue" name="fatigue">
+							<option value="choose" disabled selected>Yes/No</option>
+							<option value="Yes">Yes</option>
+							<option value="No">No</option>
+							</select><br><br>
+							<label for="sweats">Night sweats:</label>
+							<select id="sweats" name="sweats">
+							<option value="choose" disabled selected>Yes/No</option>
+							<option value="Yes">Yes</option>
+							<option value="No">No</option>
+							</select><br><br>
+							<label for="appetite">Appetite Loss:</label>
+							<select id="appetite" name="appetite">
+							<option value="choose" disabled selected>Yes/No</option>
+							<option value="Yes">Yes</option>
+							<option value="No">No</option>
+							</select><br><br>
+							<label for="weight">Weight loss:</label>
+							<select id="weight" name="weight">
+							<option value="choose" disabled selected>Yes/No</option>
+							<option value="Yes">Yes</option>
+							<option value="No">No</option>
+							</select><br><br>
+							<label for="Breath">Shortness of breath:</label>
+							<select id="breath" name="breath">
+								<option value="choose" disabled selected>Yes/No</option>
+								<option value="Yes">Yes</option>
+								<option value="No">No</option>
+							</select><br><br>
+							<input type="submit" value="Diagnose">
+						</form>
+						<h4>{{result3}}</h4>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s" id="captionbox">
+                    <h4 class="mb-4">Welcome to our<span class="text-primary"> Tuberculosis(TB)</span></br> testing page</h4>
+                    <p class="mb-4">Take control of your health, and say goodbye to Tuberculosis</p>
+                    <p class="mb-4">Your one-stop destination for getting your test result on Tuberculosis, fill out your symptoms and get your results as fast as possible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+	 <!-- HOME -->
+    
+     <!-- GOOGLE MAP -->
+     <!-- <section id="google-map">
+     <!- How to change your own map point
+            1. Go to Google Maps
+            2. Click on your location point
+            3. Click "Share" and choose "Embed map" tab
+            4. Copy only URL and paste it within the src="" field below
+	
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.3030413476204!2d100.5641230193719!3d13.757206847615207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf51ce6427b7918fc!2sG+Tower!5e0!3m2!1sen!2sth!4v1510722015945" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+     </section>            -->
+
+     <!-- SCRIPTS -->
+     <script src="../static/js/jquery.js"></script>
+     <script src="../static/js/bootstrap.min.js"></script>
+     <script src="../static/js/jquery.sticky.js"></script>
+     <script src="../static/js/jquery.stellar.min.js"></script>
+     <script src="../static/js/wow.min.js"></script>
+     <script src="../static/js/smoothscroll.js"></script>
+     <script src="../static/js/owl.carousel.min.js"></script>
+     <script src="../static/js/custom.js"></script>
+
+</body>
+</html>
+ 
